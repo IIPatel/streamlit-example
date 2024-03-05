@@ -70,5 +70,8 @@ def main():
             material_image = call_dalle(api_key, dalle_prompt)
             st.image(material_image, caption="Generated Material Visualization")
 
+        else:
+            st.error("Please enter both an API key and the desired properties to generate the material description.")
+
 if __name__ == "__main__":
     main()
