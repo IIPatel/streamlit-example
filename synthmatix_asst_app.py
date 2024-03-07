@@ -21,7 +21,6 @@ assistant = client.beta.assistants.create(
 
 def show_json(obj):
     print(json.dumps(json.loads(obj.model_dump_json()), indent=4))
-
     show_json(assistant)
 
 thread = client.beta.threads.create()
